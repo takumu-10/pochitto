@@ -1,10 +1,11 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+/* margin: 0 auto; だけ残して、padding を消す */
   margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  padding: 0; /* ← 2rem などが入っていたら 0 にする */
+  width: 100%;
+  max-width: 100%; /* 横幅を制限しない */
 }
 
 a,
@@ -23,13 +24,13 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    /* display: flex;
+    place-items: center; */
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
   }
 }
