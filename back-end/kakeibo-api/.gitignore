@@ -39,3 +39,4 @@ build/
 
 # application.propertiesを無視する（パスを合わせる）
 **/application.properties
+/bin/
